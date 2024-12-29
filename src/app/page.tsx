@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { HeroSection } from "./_components/hero-section";
 import { TwoDGamesSection } from "./_components/two-d-games-section";
-import { ThreeDGamesSection } from "./_components/three-d-games-section";
+import { ThreeDGamesSection } from "./_components/three-d/three-d-games-section";
+import { Footer } from "./_components/footer";
 
 export default function Home() {
 	return (
@@ -9,6 +10,7 @@ export default function Home() {
 			<HeroSection />
 			<TwoDGamesSection />
 			<ThreeDGamesSection />
+			<Footer />
 		</div>
 	);
 }
