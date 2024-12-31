@@ -1,15 +1,17 @@
 "use client";
 import Image from "next/image";
-import bookMarkerBlue from "@/../public/book-marker-blue.png";
+import bookMarkerBlue from "@/../public/book-marker.png";
 import { IconNote } from "@tabler/icons-react";
 import { motion } from "motion/react";
+import { DevImagesSection } from "../dev-images-section";
+import image from "@/../public/kllr.jpeg";
 
 export function TwoDGamesSection() {
 	return (
-		<div className="relative bg-white h-[1000px] w-full">
+		<div className="relative bg-white h-[1000px] w-full pt-6">
 			<motion.div
-				initial={{ opacity: 0, y: 100 }}
-				whileInView={{ opacity: 1, y: -50 }}
+				initial={{ opacity: 0, x: -100 }}
+				whileInView={{ opacity: 1, x: 0 }}
 				transition={{ duration: 0.5, bounce: "linear" }}
 				className="relative z-10 h-24"
 			>
@@ -19,11 +21,11 @@ export function TwoDGamesSection() {
 						Jogos 2D
 					</h2>
 				</div>
-				<div className="absolute left-0 top-0 -z-10">
+				<div className="absolute left-0 top-1/2 sm:top-0 -translate-y-1/2 sm:translate-y-0 -z-10">
 					<Image src={bookMarkerBlue} alt="" height={100} />
 				</div>
 			</motion.div>
-
+			<DevImagesSection image_1={image} image_2={image} image_3={image} />
 			<div
 				className="
           absolute inset-0
