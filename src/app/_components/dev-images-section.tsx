@@ -18,7 +18,7 @@ export function DevImagesSection({
 				initial={{ opacity: 0, x: -10 }}
 				whileInView={{ opacity: 1, x: 0, rotateZ: -12 }}
 				transition={{ duration: 0.5, bounce: "linear" }}
-				className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 -rotate-12"
+				className="relative aspect-[9/10] shadow-lg w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800 -rotate-12"
 			>
 				<Image
 					src={image_1}
@@ -31,7 +31,7 @@ export function DevImagesSection({
 				initial={{ opacity: 0, x: -30 }}
 				whileInView={{ opacity: 1, x: 0 }}
 				transition={{ duration: 0.5, bounce: "linear" }}
-				className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800"
+				className="relative aspect-[9/10] shadow-lg w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800"
 			>
 				<Image
 					src={image_2}
@@ -44,7 +44,7 @@ export function DevImagesSection({
 				initial={{ opacity: 0, x: -40 }}
 				whileInView={{ opacity: 1, x: 0, rotateZ: 12 }}
 				transition={{ duration: 0.5, bounce: "linear" }}
-				className="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800"
+				className="relative aspect-[9/10] shadow-lg w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800"
 			>
 				<Image
 					src={image_3}
